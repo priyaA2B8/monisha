@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom manipulation</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            margin-top: 100px;
+        }
+        .filters{
+                text-align: center;
+        }
+            
+        
+        form{
+            margin: auto;
+            max-width :100px; 
+        }
+        label{
+            display:block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="joblisting">
+
+    </div>
+    <div id="filters">
+
+    </div>
+    <label for ="Jobtype">Jobtype</label>
+    <select>
+        <option value="all">all</option>
+        <option value="fulltime">full time</option>
+        <option value="part time">parttime</option>
+    </select>
+    <label for="location">location</label>
+    <input type="text" id="loction">
+    <label for="salary">salary range</label>
+     <input type="range" id="range" min="0" max="10000" value="50000">
+     <span id="salaryvalue">50000</span>
+     <button>submit</button>
+    
+
+</body>
